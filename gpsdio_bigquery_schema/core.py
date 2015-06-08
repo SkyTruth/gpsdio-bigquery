@@ -2,7 +2,7 @@
 
 
 """
-Core components for gpsdio_bigquery
+Core components for gpsdio_bigquery_schema
 """
 
 
@@ -37,7 +37,7 @@ default_cols = ["type", "mmsi", "timestamp", "lon", "lat", "heading", "turn", "c
 )
 @click.argument("schemafile")
 @click.pass_context
-def gpsdio_bigquery(ctx, schemafile, cols):
+def gpsdio_bigquery_schema(ctx, schemafile, cols):
     """
     Produce a BigQuery schema for a set of GPSD columns, suitable for
     use together with CSV output from gpsdio-csv.
@@ -53,4 +53,4 @@ def gpsdio_bigquery(ctx, schemafile, cols):
 
 
 if __name__ == '__main__':
-    gpsdio_bigquery()
+    gpsdio_bigquery_schema()

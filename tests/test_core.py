@@ -1,5 +1,5 @@
 """
-Unittests for `gpsdio_bigquery.core`.
+Unittests for `gpsdio_bigquery_schema.core`.
 """
 
 

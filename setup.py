@@ -2,7 +2,7 @@
 
 
 """
-Setup script for gpsdio-bigquery
+Setup script for gpsdio-bigquery-schema
 """
 
 
@@ -22,7 +22,7 @@ version = None
 author = None
 email = None
 source = None
-with open(os.path.join('gpsdio_bigquery', '__init__.py')) as f:
+with open(os.path.join('gpsdio_bigquery_schema', '__init__.py')) as f:
     for line in f:
         if line.strip().startswith('__version__'):
             version = line.split('=')[1].strip().replace('"', '').replace("'", '')
@@ -56,7 +56,7 @@ setup_args = dict(
     description="A CLI plugin for `gpsdio` that sorts messages in arbitrarily large files according to an arbitrary set of columns.",
     entry_points='''
         [gpsdio.gpsdio_plugins]
-        sort=gpsdio_bigquery.core:gpsdio_bigquery
+        sort=gpsdio_bigquery_schema.core:gpsdio_bigquery_schema
     ''',
     extras_require={
         'test': ['pytest', 'pytest-cov']
@@ -70,8 +70,8 @@ setup_args = dict(
     keywords='AIS GIS remote sensing sort',
     license=license,
     long_description=readme,
-    name='gpsdio-bigquery',
-    packages=['gpsdio_bigquery'],
+    name='gpsdio-bigquery-schema',
+    packages=['gpsdio_bigquery_schema'],
     url=source,
     version=version,
     zip_safe=True

@@ -3,12 +3,12 @@ gpsdio sorting plugin
 =====================
 
 
-.. image:: https://travis-ci.org/SkyTruth/gpsdio-bigquery.svg?branch=master
-    :target: https://travis-ci.org/SkyTruth/gpsdio-bigquery
+.. image:: https://travis-ci.org/SkyTruth/gpsdio-bigquery-schema.svg?branch=master
+    :target: https://travis-ci.org/SkyTruth/gpsdio-bigquery-schema
 
 
-.. image:: https://coveralls.io/repos/SkyTruth/gpsdio-bigquery/badge.svg?branch=master
-    :target: https://coveralls.io/r/SkyTruth/gpsdio-bigquery
+.. image:: https://coveralls.io/repos/SkyTruth/gpsdio-bigquery-schema/badge.svg?branch=master
+    :target: https://coveralls.io/r/SkyTruth/gpsdio-bigquery-schema
 
 
 A CLI plugin for `gpsdio <https://github.com/skytruth/gpdsio/>`_ that sorts messages in arbitrarily large files according to an arbitrary set of columns.
@@ -32,14 +32,14 @@ Via pip:
 
 .. code-block:: console
 
-    $ pip install gpsdio-bigquery
+    $ pip install gpsdio-bigquery-schema
 
 From master:
 
 .. code-block:: console
 
-    $ git clone https://github.com/SkyTruth/gpsdio-bigquery
-    $ cd gpsdio-bigquery
+    $ git clone https://github.com/SkyTruth/gpsdio-bigquery-schema
+    $ cd gpsdio-bigquery-schema
     $ pip install .
 
 
@@ -48,8 +48,8 @@ Developing
 
 .. code-block::
 
-    $ git clone https://github.com/SkyTruth/gpsdio-bigquery
-    $ cd gpsdio-bigquery
+    $ git clone https://github.com/SkyTruth/gpsdio-bigquery-schema
+    $ cd gpsdio-bigquery-schema
     $ virtualenv venv && source venv/bin/activate
     $ pip install -e .[test]
-    $ py.test tests --cov gpsdio_bigquery --cov-report term-missing
+    $ py.test tests --cov gpsdio_bigquery_schema --cov-report term-missing

@@ -7,7 +7,7 @@ files according to an arbitrary set of columns.
 __version__ = '0.1'
 __author__ = 'Egil Moeller'
 __email__ = 'egil@skytruth.org'
-__source__ = 'https://github.com/SkyTruth/gpsdio-bigquery'
+__source__ = 'https://github.com/SkyTruth/gpsdio-bigquery-schema'
 __license__ = """
 Copyright 2015 SkyTruth
 

@@ -44,8 +44,12 @@ default_cols = ["type", "mmsi", "timestamp", "lon", "lat", "heading", "turn", "c
 @click.pass_context
 def gpsdio_bigquery_schema(ctx, schemafile, cols):
     """
-    Produce a BigQuery schema for a set of GPSD columns, suitable for
-    use together with CSV output from gpsdio-csv.
+    Produce a BigQuery schema for gpsdio data.
+
+    Produces a BigQuery schema for use together with gpsdio data in a
+    CSV container format (as supported by gpsdio-csv).
+
+    You must supply the same column list as used in the CSV!
     """
 
     cols = cols.split(",")

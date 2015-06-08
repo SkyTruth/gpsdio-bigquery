@@ -30,7 +30,7 @@ default_cols = ["type", "mmsi", "timestamp", "lon", "lat", "heading", "turn", "c
 
 
 
-@click.command(name='bigquery-schema')
+@click.command(name='bq-schema')
 @click.option(
     '-c', '--cols', metavar='COL,[COL,...]', default=','.join(default_cols),
     help="Columns to export to BigQuery. Default: " + ','.join(default_cols),

@@ -12,7 +12,7 @@ import gpsdio.schema
 import datetime
 import json
 
-
+# Map from gpsdio / python types to BigQuery column type names
 typemap = {
     str: "STRING",
     unicode: "STRING",
@@ -22,6 +22,11 @@ typemap = {
 }
 
 def type_for_col(col):
+    """Returns the BigQuery column type name required for a certain
+    gpsdio column, by looking up the corresponding gpsdio schema
+    column and translating the type. Unknown columns are assigned the
+    STRING type."""
+
     if col == 'extra' or col not in gpsdio.schema.CURRENT or gpsdio.schema.CURRENT[col]['type'] not in typemap:
         return 'STRING'
     return typemap[gpsdio.schema.CURRENT[col]['type']]

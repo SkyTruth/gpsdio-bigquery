@@ -56,7 +56,7 @@ setup_args = dict(
     description="A CLI plugin for `gpsdio` that sorts messages in arbitrarily large files according to an arbitrary set of columns.",
     entry_points='''
         [gpsdio.gpsdio_plugins]
-        sort=gpsdio_bigquery_schema.core:gpsdio_bigquery_schema
+        bigquery_schema=gpsdio_bigquery_schema.core:gpsdio_bigquery_schema
     ''',
     extras_require={
         'test': ['pytest', 'pytest-cov']

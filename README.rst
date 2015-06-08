@@ -1,5 +1,5 @@
 =====================
-gpsdio sorting plugin
+gpsdio bigquery schema plugin
 =====================
 
 
@@ -11,18 +11,18 @@ gpsdio sorting plugin
     :target: https://coveralls.io/r/SkyTruth/gpsdio-bigquery-schema
 
 
-A CLI plugin for `gpsdio <https://github.com/skytruth/gpdsio/>`_ that sorts messages in arbitrarily large files according to an arbitrary set of columns.
+A CLI plugin for `gpsdio` that produces a schema file for BigQuery to be used together with CSV output from gpsdio-csv for exporting data into Google's BigQuery.
 
 
 Examples
 --------
 
-See ``gpsdio sort --help`` for info.
+See ``gpsdio bq-schema --help`` for info.
 
 .. code-block:: console
 
-    $ gpsdio sort input.msg output.msg \
-        -c mmsi,timestamp
+    $ gpsdio bq-schema schema.json \
+        -c mmsi,timestamp,lat,lon,extra
 
 
 Installing

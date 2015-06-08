@@ -21,10 +21,10 @@ def unittestfiles():
             os.unlink(name)
 
 
-def test_sort():
+def test_bigquery_schema():
     with unittestfiles():
         result = CliRunner().invoke(gpsdio.cli.main.main_group, [
-            'bigquery-schema',
+            'bq-schema',
             '-c', 'timestamp,extra',
             'unittest.schema.json'
         ])

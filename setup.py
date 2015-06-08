@@ -53,7 +53,7 @@ setup_args = dict(
         'Topic :: Scientific/Engineering :: Information Analysis',
         'Topic :: Utilities',
     ],
-    description="A CLI plugin for `gpsdio` that sorts messages in arbitrarily large files according to an arbitrary set of columns.",
+    description="A CLI plugin for `gpsdio` that produces a schema file for BigQuery to be used together with CSV output from gpsdio-csv for exporting data into Google's BigQuery.",
     entry_points='''
         [gpsdio.gpsdio_plugins]
         bigquery_schema=gpsdio_bigquery_schema.core:gpsdio_bigquery_schema
@@ -67,7 +67,7 @@ setup_args = dict(
         'gpsdio>=0.0.2',
         'msgpack-python>=0.4.6'
     ],
-    keywords='AIS GIS remote sensing sort',
+    keywords='AIS GIS remote sensing BigQuery',
     license=license,
     long_description=readme,
     name='gpsdio-bigquery-schema',

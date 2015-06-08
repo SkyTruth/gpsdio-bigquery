@@ -1,6 +1,7 @@
 """
-A CLI plugin for `gpsdio` that sorts messages in arbitrarily large
-files according to an arbitrary set of columns.
+A CLI plugin for `gpsdio` that produces a schema file for BigQuery to
+be used together with CSV output from gpsdio-csv for exporting data
+into Google's BigQuery.
 """
 
 

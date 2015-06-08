@@ -1,3 +1,5 @@
+*~
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -62,4 +64,6 @@ target/
 .idea/
 
 # Ignore tif metadata
-tests/data/*.xmlunittest*
+tests/data/*.xml
+
+unittest*
